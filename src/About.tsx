@@ -108,8 +108,8 @@ const hostData = [
 const About = () => {
     return (
         <div>
-            <div className='hero-section m-12 border'>
-                <div className="hero-img" style={{background: `url(${bgImage}) bottom center no-repeat`, }}>
+            <div className='hero-section m-12'>
+                <div className="hero-img rounded-lg" style={{background: `url(${bgImage}) bottom center no-repeat`, }}>
                     <div className='flex flex-col justify-between gap-1 text-white p-8' style={{height: '90%'}}>
                         <div>
                             <div className='flex gap-1 items-center'>
