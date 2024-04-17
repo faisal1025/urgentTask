@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  text-align: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -36,3 +38,254 @@
     transform: rotate(360deg);
   }
 }
+
+.m-4{
+  margin: 1rem;
+}
+.m-8{
+  margin: 2rem;
+}
+.m-12{
+  margin: 3rem;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.py-4{
+  padding: 1rem 0rem;
+}
+.py-8{
+  padding: 2rem 0rem;
+}
+.py-12{
+  padding: 3rem 0rem;
+}
+.p-4{
+  padding: 1rem;
+}
+.px-4{
+  padding: 0 1rem;
+}
+.px-8{
+  padding: 0 2rem;
+}
+
+.reg-input{
+  background-color: #ffffff;
+  color: slategray;
+  border: none;
+  font-size: large;
+}
+
+.border{
+  border: 2px solid black;
+}
+
+.h-screen{
+  height: 100vh;
+}
+.flex-col {
+  flex-direction: column;
+}
+.w-full {
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.gap-1 {
+  gap: 14px;
+}
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-img{
+  width: 48%
+}
+
+.register-section {
+  width: 48%;
+  background-color: beige;
+  padding: 1rem;
+}
+
+@media (max-width: 850px) {
+  .hero-img{
+    width: 100%
+  }
+  
+  .register-section {
+    width: 100%;
+  }
+  
+}
+
+.hero-heading{
+  font-size: 3.6rem;
+  width: max-content;
+  text-align: justify;
+  color: darkslategray;
+  margin : 0
+}
+
+.text-regsiter{
+  border-top: 2px solid slategray;
+  border-bottom: 2px solid slategray;
+  margin: 0px 5rem;
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.text-subtitle{
+  font-weight: 300;
+  text-align: justify;
+}
+
+.register-btn{
+  width: 100%;
+  background-color: rgb(65, 65, 189);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  font-size: large;
+  padding: 1rem;
+}
+
+.form-text-helper{
+  text-align: justify;
+}
+.p-8{
+  padding: 2em;
+}
+/* second section */
+.count-down{
+  background-color: beige;
+  padding: 2rem;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 37px;
+  justify-content: space-between
+}
+
+.timing-div{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.8rem;
+  font-weight: 500;
+  gap: 14px;
+}
+
+.timing-div .sm-text{
+  font-size: large;
+}
+
+/* second section ends */
+
+/* third one agenda starts*/
+
+.section-title{
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+.agenda{
+  font-size: 18px;
+  font-weight: 500;
+}
+.agenda-lists{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin: 1rem 0rem;
+}
+/* third one agenda ends*/
+
+/* fourth section overview */
+.overview{
+  font-size: 18px;
+  font-weight: 500;
+}
+.overview-list{
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* fourth section overview */
+
+/* fifth section */
+.benifits-div{
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid rgb(29, 29, 29);
+}
+
+.benifits-div:hover{
+  background-color: #282c34;
+  color: #ffffff;
+}
+/* fifth section */
+
+/* six section expectations */
+.expectations{
+  background-color: #282c34;
+  color: #ffffff;
+}
+.expectations-text{
+  padding: 2rem;
+  line-height: 28px;
+}
+/* six section expectations */
+/* who section  */
+.who-list{
+  display: flex;
+  font-size: 19px;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 3rem 0;
+  color: #282c34;
+  border-bottom: 1px dashed #282c34;
+}
+/* who section  */
+/* features section */
+.features-item{
+  background-color: #282c34;
+  color: #ffffff;
+  max-width: 20rem;
+}
+.features-item:hover{
+  background-color: #ffffff;
+  color: #282c34;
+  max-width: 20rem;
+}
+.feature-heading{
+  text-align: center;
+  padding: 0 1.5rem;
+  font-size: 1.8rem;
+}
+.feature-lists{
+  font-size: 18px;
+  line-height: 28px;
+}
+/* features section */
+/* hosts section  */
+.pro-img{
+  border-radius: 50%;
+  width: 38%;
+}
+/* hosts section  */
