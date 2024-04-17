@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { FaPlus } from "react-icons/fa";
+import { MdArrowBack, MdCalendarMonth, MdCallMade, MdDownload, MdShare } from "react-icons/md";
+import bgImage from './img5.jpg'
 const overviewData = [
     {
         data: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
@@ -107,8 +109,38 @@ const About = () => {
     return (
         <div>
             <div className='hero-section m-12 border'>
-                <div className="hero-img">
-                    
+                <div className="hero-img" style={{background: `url(${bgImage}) bottom center no-repeat`, }}>
+                    <div className='flex flex-col justify-between gap-1 text-white p-8' style={{height: '90%'}}>
+                        <div>
+                            <div className='flex gap-1 items-center'>
+                                <span className='border-box'><MdArrowBack /></span>
+                                <span>Events / Events details</span>
+                            </div>
+                            <div>
+                                <h2 className='hero-img-heading'>Integrated Quality Management</h2>
+                                <h4 className='hero-img-title'>with Microsoft Dynamics 365 Finance & and Supply Chain</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='pr-12'>
+                                <div className='hero-img-title'>
+                                    Thursday, April 25, 2024
+                                    <div className='font-weight-500'>2:00 PM-3:00 PM EST</div>
+                                    <div>Online - Microsoft Teams</div>
+                                </div>
+                            </div>
+                            <div className='flex gap-1 items-center justify-between py-4'>
+                                <div className='flex gap-1 items-center'>
+                                    <span className='border-box'><MdCalendarMonth /></span>
+                                    <span>Add to calendar</span>
+                                </div>
+                                <div className='flex gap-1 items-center'>
+                                    <span className='border-box'><MdDownload /></span>
+                                    <span className='border-box'><MdShare /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="register-section">
                     <div className='flex gap-1 items-center'>
@@ -161,7 +193,7 @@ const About = () => {
                 <h3 className='section-title'>Agenda</h3>
                 <div style={{textAlign: 'center'}}>In only 45 minutes you will learn about Quality Management</div>
                 <div className='agenda-lists'>
-                    <div className='px-4' style={{borderRight: '1px dashed slategray;'}}>
+                    <div className='px-4 left-list'>
                         <ul className='gap-1 flex flex-col' style={{margin: '0'}}>
                             <li>Overview of iQM main features</li>
                             <li>Overview of iQM main features</li>
@@ -261,18 +293,18 @@ const About = () => {
 
             <div className='hosts m-12'>
                 <h3 className='section-title py-8'>Hosts</h3> 
-                <div className='flex justify-center items-center'>
+                <div className='flex host-box justify-center items-center pb-16'>
                     {
                         hostData && 
                         hostData.map((host, ind) => {
                             return (
-                                <div>
-                                    <div className='flex items-center justify-between'>
+                                <div className='rounded-lg host-card'>
+                                    <div className='flex justify-between'>
                                         <div>
-                                            <h3>{host.name}</h3>
-                                            <h4>{host.role}</h4>
+                                            <h2 className='m-0 p-0 w-max'>{host.name}</h2>
+                                            <h4 className='m-0 p-0'>{host.role}</h4>
                                         </div>
-                                        <div>
+                                        <div className='text-center'>
                                             <img alt='pro pic' src={host.pic} className='pro-img' />
                                         </div>
                                     </div>
@@ -285,6 +317,34 @@ const About = () => {
                     }
 
                 </div>
+            </div>
+
+            <div className='frequently-asked m-12'>
+                <div className='frequent-title'>
+                    Frequently asked questions
+                </div>
+                <ul className='frequent-list'>
+                    <li>
+                        How do I join webinar? <span><FaPlus /></span>
+                    </li>
+                    <li>
+                        How can I ask during the webinar? <span><FaPlus /></span>
+                    </li>
+                    <li>
+                        How can I learn more about Dynamics 365 Finance? <span><FaPlus /></span>
+                    </li>
+                    <li>
+                        What platform will the webinar will held? <span><FaPlus /></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div className='contact-us m-12'>
+                <h3 className='join-us-header'>Join us at this free webinar</h3>
+                <div className='pb-16'>Contact us today to learn more about how we can help your business acheive financial excellence with Microsoft Dynamics 365.</div>
+                <button className='bg-white p-4 rounded-lg text-base'>
+                    Subscribe <MdCallMade />
+                </button>
             </div>
         </div>
     )

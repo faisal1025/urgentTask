@@ -48,14 +48,55 @@
 .m-12{
   margin: 3rem;
 }
+.pb-16{
+  padding-bottom: 4rem;
+}
 .flex-wrap{
   flex-wrap: wrap;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.pr-12{
+  padding-right: 3rem;
 }
 .py-4{
   padding: 1rem 0rem;
 }
+.bg-white{
+  background-color: #fff;
+}
 .py-8{
   padding: 2rem 0rem;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.text-white{
+  color: #fff;
+}
+.border-box{
+  border: 2px solid #fff;
+  border-radius: 50% 50%;
+  padding: 10px;
+}
+.rounded-full{
+  border-radius: 50%;
+}
+.text-center{
+  text-align: center;
+}
+.w-max{
+  width: max-content;
+}
+.m-0{
+  margin: 0px;
+}
+.p-0{
+  padding: 0px;
+}
+.rounded-lg{
+  border-radius: 6px;
 }
 .py-12{
   padding: 3rem 0rem;
@@ -144,6 +185,7 @@
   padding: 1rem 0;
   font-weight: 400;
   font-size: 1rem;
+  text-align: center;
 }
 
 .text-subtitle{
@@ -188,6 +230,23 @@
   gap: 14px;
 }
 
+.hero-img-heading{
+  font-size: 4rem;
+  color: #fff;
+  text-align: justify;
+  margin: 0;
+  padding: 0 1rem 0 0;
+}
+
+.hero-img-title{
+  font-size: 23px;
+  color: #fff;
+  padding: 0 6rem 0px 0px;
+  margin: 5px;
+}
+
+
+
 .timing-div .sm-text{
   font-size: large;
 }
@@ -210,6 +269,9 @@
   align-items: center;
   justify-content: baseline;
   margin: 1rem 0rem;
+}
+.agenda-lists .left-list{
+  border-right: 1px dashed slategray
 }
 /* third one agenda ends*/
 
@@ -284,8 +346,64 @@
 }
 /* features section */
 /* hosts section  */
+.host-box{
+  border-bottom:1px dashed slategray;
+}
 .pro-img{
   border-radius: 50%;
-  width: 38%;
+  width: 53%;
+}
+.host-card:hover{
+  background-color: #282c34;
+  color: #ffffff;
+}
+.host-card{
+  padding: 1.5rem;
 }
 /* hosts section  */
+.frequent-title{
+  width: 19%;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #282c34;
+}
+.frequently-asked {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frequent-list{
+  width: 70%;
+  font-size: 1.2rem;
+  color: #282c34;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.frequent-list li{
+  list-style: none;
+  padding: 1.5rem 0;
+  border-bottom: 1px dashed slategrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* jion us section  */
+.contact-us{
+  background-color: #282c34;
+  color: #fff;
+  font-size: 18px;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.join-us-header{
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.text-base{
+  font-size: 18px;
+}
+/* jion us section  */
