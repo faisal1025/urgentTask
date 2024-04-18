@@ -110,6 +110,9 @@
 .px-8{
   padding: 0 2rem;
 }
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
 
 .reg-input{
   background-color: #ffffff;
@@ -159,16 +162,6 @@
   padding: 1rem;
 }
 
-@media (max-width: 850px) {
-  .hero-img{
-    width: 100%
-  }
-  
-  .register-section {
-    width: 100%;
-  }
-  
-}
 
 .hero-heading{
   font-size: 3.6rem;
@@ -181,7 +174,7 @@
 .text-regsiter{
   border-top: 2px solid slategray;
   border-bottom: 2px solid slategray;
-  margin: 0px 5rem;
+  width: max-content;
   padding: 1rem 0;
   font-weight: 400;
   font-size: 1rem;
@@ -213,13 +206,14 @@
 .count-down{
   background-color: beige;
   padding: 2rem;
-  text-align: justify;
+  text-align: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 37px;
+  gap: 2rem;
   justify-content: space-between
 }
+
 
 .timing-div{
   display: flex;
@@ -251,6 +245,28 @@
   font-size: large;
 }
 
+@media(max-width: 610px){
+  .count-down{
+    justify-content: center
+  }
+  .hero-img-heading{
+    font-size: 3rem;
+  }
+  .hero-img-title{
+    font-size: 18px;
+    padding: 0 2rem 0 0;
+  }
+  .hero-heading{
+    font-size: 2rem;
+  }
+  .text-regsiter{
+    font-size: 14px;
+  }
+}
+
+
+
+
 /* second section ends */
 
 /* third one agenda starts*/
@@ -259,6 +275,9 @@
   font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
+}
+.hosts .section-title{
+  background-color: beige;
 }
 .agenda{
   font-size: 18px;
@@ -279,9 +298,10 @@
 .overview{
   font-size: 18px;
   font-weight: 500;
+  background-color: beige;
 }
 .overview-list{
-  padding: 0 4rem;
+  padding: 0 0 0 4rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -289,6 +309,10 @@
 /* fourth section overview */
 
 /* fifth section */
+.benifits{
+  flex-wrap: wrap;
+}
+
 .benifits-div{
   padding: 1rem 1.5rem;
   border-radius: 50px;
@@ -317,11 +341,17 @@
   font-size: 19px;
   gap: 2rem;
   justify-content: center;
+  text-align: center;
   align-items: center;
   font-weight: 500;
   padding: 3rem 0;
   color: #282c34;
   border-bottom: 1px dashed #282c34;
+}
+@media(max-width: 708px){
+  .who-list{
+    flex-direction: column;
+  }
 }
 /* who section  */
 /* features section */
@@ -348,10 +378,11 @@
 /* hosts section  */
 .host-box{
   border-bottom:1px dashed slategray;
+  flex-wrap: wrap;
 }
 .pro-img{
   border-radius: 50%;
-  width: 53%;
+  width: 50%;
 }
 .host-card:hover{
   background-color: #282c34;
@@ -359,6 +390,8 @@
 }
 .host-card{
   padding: 1.5rem;
+  max-width: 346px;
+  background-color: beige;
 }
 /* hosts section  */
 .frequent-title{
@@ -382,6 +415,19 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+@media(max-width: 700px){
+  .frequent-title{
+    width: 100%;
+    text-align: center;
+  }
+  .frequently-asked{
+    flex-wrap: wrap;
+  }
+  .frequent-list{
+    padding: 0;
+    width: 100%;
+  }
 }
 .frequent-list li{
   list-style: none;
@@ -407,3 +453,52 @@
   font-size: 18px;
 }
 /* jion us section  */
+@media(max-width: 460px){
+  .hero-img-heading{
+    font-size: 1.8rem;
+  }
+  .hero-img-title{
+    font-size: 12px;
+    padding: 0 0 0 0;
+  }
+  .hero-heading{
+    font-size: 2rem;
+  }
+  .text-regsiter{
+    font-size: 12px;
+  }
+  .text-subtitle{
+    font-size: 11px;
+  }
+  .agenda-lists{
+    flex-direction: column;
+  }
+  .agenda-lists .left-list{
+    border-bottom: 1px dashed slategray;
+    border-right: none;
+    padding-bottom: 10px;
+  }
+  .host-card-header{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 10px;
+  }
+  .host-name-heading{
+    padding-bottom: 14px;
+  }
+}
+@media(max-width: 380px){
+  /* .text-regsiter{
+    font-size: 8px;
+  } */
+}
+@media (max-width: 1014px) {
+  .hero-img{
+    width: 100%
+  }
+  
+  .register-section {
+    width: -webkit-fill-available;
+  }
+  
+}

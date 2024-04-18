@@ -117,19 +117,19 @@ const About = () => {
                                 <span>Events / Events details</span>
                             </div>
                             <div>
-                                <h2 className='hero-img-heading'>Integrated Quality Management</h2>
-                                <h4 className='hero-img-title'>with Microsoft Dynamics 365 Finance & and Supply Chain</h4>
+                                <h2 className='hero-img-heading'>Integrated <br/> Quality <br/> Management</h2>
+                                <h4 className='hero-img-title'>with Microsoft Dynamics 365 <br/> Finance & and Supply Chain</h4>
                             </div>
                         </div>
                         <div>
-                            <div className='pr-12'>
-                                <div className='hero-img-title'>
-                                    Thursday, April 25, 2024
-                                    <div className='font-weight-500'>2:00 PM-3:00 PM EST</div>
-                                    <div>Online - Microsoft Teams</div>
-                                </div>
+                            
+                            <div className='hero-img-title'>
+                                Thursday, April 25, 2024
+                                <div className='font-weight-500'>2:00 PM-3:00 PM EST</div>
+                                <div>Online - Microsoft Teams</div>
                             </div>
-                            <div className='flex gap-1 items-center justify-between py-4'>
+                          
+                            <div className='flex gap-1 items-center flex-wrap justify-between py-4'>
                                 <div className='flex gap-1 items-center'>
                                     <span className='border-box'><MdCalendarMonth /></span>
                                     <span>Add to calendar</span>
@@ -143,7 +143,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="register-section">
-                    <div className='flex gap-1 items-center'>
+                    <div className='flex justify-between gap-1 flex-wrap items-center'>
                         <div>
                             <h1 className='hero-heading'>
                                 Register <br/> now
@@ -153,7 +153,7 @@ const About = () => {
                             </div>
                         </div>
                         <h3 className='text-regsiter'>
-                            Our weekly webinars welcome professionals from all industries.
+                            Our weekly webinars <br/> welcome professionals <br/> from all industries.
                         </h3>
                     </div>
                     <form className='flex flex-col w-full py-8 gap-1'>
@@ -230,7 +230,7 @@ const About = () => {
 
             <div className='m-12'>
                 <h3 className='section-title'>Industries that can be benifit from this event</h3>
-                <div className='flex justify-center items-center gap-1 py-4'>
+                <div className='flex justify-center items-center gap-1 py-4 benifits'>
                     <div className='benifits-div'>Manufacturing</div>
                     <div className='benifits-div'>Automotive</div>
                     <div className='benifits-div'>Aerospace</div>
@@ -299,8 +299,8 @@ const About = () => {
                         hostData.map((host, ind) => {
                             return (
                                 <div className='rounded-lg host-card'>
-                                    <div className='flex justify-between'>
-                                        <div>
+                                    <div className='flex justify-between host-card-header'>
+                                        <div className='host-name-heading'>
                                             <h2 className='m-0 p-0 w-max'>{host.name}</h2>
                                             <h4 className='m-0 p-0'>{host.role}</h4>
                                         </div>
