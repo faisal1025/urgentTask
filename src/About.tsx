@@ -1,7 +1,26 @@
-import React from 'react'
-import { FaPlus } from "react-icons/fa";
+import React, {useState} from 'react'
+import { FaMinus, FaPlus } from "react-icons/fa";
 import { MdArrowBack, MdCalendarMonth, MdCallMade, MdDownload, MdShare } from "react-icons/md";
 import bgImage from './img5.jpg'
+
+const faqData = [
+    {
+        question: 'How do I join webinar?',
+        answer: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
+    },
+    {
+        question: 'How can I ask during the webinar?',
+        answer: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
+    },
+    {
+        question: 'How can I learn more about Dynamics 365 Finance?',
+        answer: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
+    },
+    {
+        question: 'What platform will the webinar will held?',
+        answer: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.'
+    },
+]
 const overviewData = [
     {
         data: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
@@ -106,6 +125,14 @@ const hostData = [
 ]
 
 const About = () => {
+    const [faqSelected, setFaqSelected] = useState<number | null>(null)
+
+    const toggleFaq = (i: number) => {
+        if(faqSelected === i) return setFaqSelected(null)
+
+        return setFaqSelected(i)
+    }
+
     return (
         <div>
             <div className='hero-section m-12'>
@@ -324,18 +351,20 @@ const About = () => {
                     Frequently asked questions
                 </div>
                 <ul className='frequent-list'>
-                    <li>
-                        How do I join webinar? <span><FaPlus /></span>
-                    </li>
-                    <li>
-                        How can I ask during the webinar? <span><FaPlus /></span>
-                    </li>
-                    <li>
-                        How can I learn more about Dynamics 365 Finance? <span><FaPlus /></span>
-                    </li>
-                    <li>
-                        What platform will the webinar will held? <span><FaPlus /></span>
-                    </li>
+                    {
+                        faqData && faqData.map((item, i) => {
+                            return (
+                                <li className='flex flex-col'>
+                                    <div className='faq-question' onClick={() => toggleFaq(i)}>
+                                        {item.question} <span>{faqSelected === i ? <FaMinus /> : <FaPlus />}</span>
+                                    </div>
+                                    <div className={`${faqSelected === i ? 'faq-content show' : 'faq-content'}`}>
+                                        {item.answer}
+                                    </div>
+                                </li>
+                            )
+                        })
+                    }
                 </ul>
             </div>
 

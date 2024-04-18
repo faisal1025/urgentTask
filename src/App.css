@@ -452,6 +452,24 @@
 .text-base{
   font-size: 18px;
 }
+.faq-question{
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.faq-content{
+  padding-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.faq-content.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.8s cubic-bezier(0,1,0,1);
+}
 /* jion us section  */
 @media(max-width: 460px){
   .hero-img-heading{
